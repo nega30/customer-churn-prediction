@@ -7,7 +7,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "models" / "churn_model.joblib"
+MODEL_PATH = BASE_DIR / "models" / "churn_logistic_regression.joblib"
 
 model = joblib.load(MODEL_PATH)
 
